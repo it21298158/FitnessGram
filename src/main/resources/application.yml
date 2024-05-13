@@ -1,0 +1,18 @@
+access-token:
+  private: "access-refresh-token-keys/access-token-private.key"
+  public: "access-refresh-token-keys/access-token-public.key"
+refresh-token:
+  private: "access-refresh-token-keys/refresh-token-private.key"
+  public: "access-refresh-token-keys/refresh-token-public.key"
+spring:
+  data:
+    mongodb:
+      uri: mongodb+srv://root:root@fitness.jjkb5vr.mongodb.net/fitness-collection?retryWrites=true&w=majority&appName=Fitness
+      #uri: mongodb+srv://dabedip595:root@cluster0.oeolccr.mongodb.net/test_paf?retryWrites=true&w=majority&appName=Cluster0
+      #uri: mongodb+srv://heshanjayasundara218:fkK5Eb0BIv9WKC9A@fitnessgramdb.nnkv390.mongodb.net/FitnessGramDB?retryWrites=true&w=majority&appName=FitnessGramDB
+server:
+  port: 8090
+
+logging:
+  level:
+    org.springframework.security: DEBUG
